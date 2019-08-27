@@ -1,4 +1,13 @@
-@charset 'UTF-8';
+---
+# comments
+---
+// Syntax highlighting sass properties and inclusion
+// $base-font-size: 1em;
+$spacing-unit:     30px !default;
+
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
 
 // 1. Configuration and helpers
 @import
@@ -8,7 +17,9 @@
 
 // 2. Vendors
 @import
-  'vendors/normalize';
+  'vendors/normalize',
+  'vendors/syntax-highlighting',
+  'vendors/materialize/materialize';
 
 // 3. Base stuff
 @import
