@@ -8,7 +8,10 @@
 
 /// Regular font family
 /// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$serif-stack: 'Noto Serif KR', serif;
+$sans-serif-stack: 'Noto Sans KR', sans-serif;
+// $text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack: #{$sans-serif-stack} !default;
 
 /// Code (monospace) font family
 /// @type List
