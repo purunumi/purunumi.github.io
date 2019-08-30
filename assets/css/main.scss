@@ -18,8 +18,8 @@ $spacing-unit:     30px !default;
 // 2. Vendors
 @import
   'vendors/normalize',
-  'vendors/syntax-highlighting',
-  'vendors/materialize/materialize';
+  'vendors/syntax-highlighting';
+  // 'vendors/materialize/materialize';
 
 // 3. Base stuff
 @import
@@ -35,7 +35,34 @@ $spacing-unit:     30px !default;
 
 // 5. Components
 @import
-  'components/button';
+  "components/global",
+  "components/badges",
+  "components/icons-material-design",
+  "components/grid",
+  "components/navbar",
+  "components/typography",
+  "components/transitions",
+  "components/cards",
+  "components/toast",
+  "components/tabs",
+  "components/tooltip",
+  "components/buttons",
+  "components/dropdown",
+  "components/waves",
+  "components/modal",
+  "components/collapsible",
+  "components/chips",
+  "components/materialbox",
+  "components/forms/forms",
+  "components/table_of_contents",
+  "components/sidenav",
+  "components/preloader",
+  "components/slider",
+  "components/carousel",
+  "components/tapTarget",
+  "components/pulse",
+  "components/datepicker",
+  "components/timepicker";
 
 // 6. Page-specific styles
 @import

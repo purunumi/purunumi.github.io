@@ -17,3 +17,4 @@ date: 2019-08-29 21:15:05 +0000
 
 scss
 - Materialize will merge with HugoGiraudel's sass-boilerplater
+- update nomalize.scss 5.0.0 > 7.0.0
