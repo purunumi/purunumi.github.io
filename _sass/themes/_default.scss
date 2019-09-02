@@ -6,3 +6,70 @@
 
 
 
+// grid
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+}
+.row{
+    padding:0 1.5%;
+}
+@media #{$medium-and-up} {
+    .container {
+        width: 95%;
+    }
+}
+@media #{$large-and-up} {
+    .container {
+        width: 95%;
+    }
+}
+@media #{$small-and-down} {
+    .container {
+        width: auto;
+        padding: 0 24px;
+    }
+    .row {
+        padding:0;
+        .col {
+            &.s12 {
+                padding:0;
+            }
+        }
+    }
+}
+
+
+
+
+
+// home
+#home {
+    .recent-post {
+        .cover {
+            width:100%;
+            padding-top:42.5%;
+            background-repeat:no-repeat;
+            background-position:50%;
+            background-size:cover;
+            @extend .z-depth-1;
+        }
+        .content{
+            margin-top:-24px;
+            .card{
+                margin:0;
+            }
+        }
+    }
+    @media #{$small-and-down} {
+        .recent-post {
+            .cover{
+                padding-top:50%;
+            }
+            .content{
+                margin-top:0;
+            }
+        }
+    }
+}
