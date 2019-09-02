@@ -31,6 +31,7 @@ $spacing-unit:     30px !default;
 
 // 4. Layout-related sections
 @import
+  'layout/grid',
   'layout/header',
   'layout/footer';
 
@@ -43,9 +44,7 @@ $spacing-unit:     30px !default;
   "components/global",
   "components/badges",
   "components/icons-material-design",
-  "components/grid",
   "components/navbar",
-  "components/typography",
   "components/transitions",
   "components/cards",
   "components/toast",
