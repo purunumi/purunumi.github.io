@@ -74,15 +74,15 @@ $base-url: '/assets/' !default;
 // 1. Colors
 // ==========================================================================
 
-$primary-color: #fff !default;
+$primary-color: map-get($grey, 'darken-4') !default;
 $primary-color-light: lighten($primary-color, 15%) !default;
 $primary-color-dark: darken($primary-color, 15%) !default;
 
-$secondary-color: map-get($teal, 'lighten-1') !default;
-$success-color: map-get($green, 'base') !default;
-$error-color: map-get($red, 'base') !default;
+$secondary-color: map-get($deep-purple, 'lighten-1') !default;
+$success-color: map-get($teal, 'lighten-2') !default;
+$error-color: map-get($red, 'accent-4') !default;
 $text-color: map-get($grey, 'darken-4') !default;
-$link-color: map-get($light-blue, 'lighten-4') !default;
+$link-color: map-get($teal, 'lighten-1') !default;
 
 
 // 2. Badges
@@ -142,7 +142,7 @@ $button-floating-radius: 50% !default;
 
 $card-padding: 24px !default;
 $card-bg-color: #fff !default;
-$card-link-color: map-get($orange, 'accent-2') !default;
+$card-link-color: $link-color !default;
 $card-link-color-light: lighten($card-link-color, 20%) !default;
 
 
@@ -346,9 +346,11 @@ $toast-action-color: #eeff41;
 
 /// Regular font family
 /// @type List
-$serif-stack: 'Noto Serif KR', serif;
-$sans-serif-stack: 'Noto Sans KR', sans-serif;
-$font-stack: #{$sans-serif-stack} !default;
+$font-stack: 'Noto Sans KR', sans-serif !default;
+
+/// Contents font family
+/// @type List
+$conts-font-stack: 'Noto Serif KR', serif !default;
 
 /// Code (monospace) font family
 /// @type List

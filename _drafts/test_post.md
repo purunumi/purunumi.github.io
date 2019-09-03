@@ -2,7 +2,7 @@
 layout: post
 title: "행정각부의 설치·조직과 직무범위는 법률로 정한다."
 date: 2019-08-29 21:15:05 +0000
-# image: /assets/images/twoscreen.jpg
+image: /assets/images/twoscreen.jpg
 ---
 
 

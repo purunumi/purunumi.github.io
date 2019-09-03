@@ -3,22 +3,37 @@
 // default one.
 // -----------------------------------------------------------------------------
 
-
-
-
 // grid
-.container {
-    margin: 0 auto;
-    width: 90%;
-    max-width: 1280px;
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
-.row{
-    padding:0 1.5%;
+nav {
+  background-color: #fff;
+}
+#header {
+  .nav-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+#contents {
+  flex: 1 0 auto;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1280px;
+}
+.row {
+  padding: 0 1.5%;
 }
 @media #{$medium-and-up} {
-    .container {
-        width: 93%;
-    }
+  .container {
+    width: 93%;
+  }
 }
 // @media #{$large-and-up} {
 //     .container {
@@ -26,50 +41,80 @@
 //     }
 // }
 @media #{$small-and-down} {
-    .container {
-        width: auto;
-        padding: 0 24px;
+  .container {
+    width: auto;
+    padding: 0 24px;
+  }
+  .row {
+    padding: 0;
+    .col {
+      &.s12 {
+        padding: 0;
+      }
     }
-    .row {
-        padding:0;
-        .col {
-            &.s12 {
-                padding:0;
-            }
-        }
-    }
+  }
 }
 
-
-
-
+//
+.z-depth-1 {
+  box-shadow: none !important;
+}
 
 // home
-#home {
+.page_home {
+  .recent-post {
+    .cover {
+      width: 100%;
+      padding-top: 42.5%;
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-size: cover;
+      @extend .z-depth-1;
+    }
+    .content {
+      margin-top: -24px;
+    }
+  }
+  @media #{$small-and-down} {
     .recent-post {
-        .cover {
-            width:100%;
-            padding-top:42.5%;
-            background-repeat:no-repeat;
-            background-position:50%;
-            background-size:cover;
-            @extend .z-depth-1;
-        }
-        .content{
-            margin-top:-24px;
-            .card{
-                margin-top:0;
-            }
-        }
+      .cover {
+        padding-top: 50%;
+      }
+      .content {
+        margin-top: 0;
+      }
     }
-    @media #{$small-and-down} {
-        .recent-post {
-            .cover{
-                padding-top:50%;
-            }
-            .content{
-                margin-top:0;
-            }
-        }
+  }
+}
+
+// post
+.page_post-content {
+  .post-cover {
+    .cover {
+      width: 100%;
+      padding-top: 42.5%;
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-size: cover;
+      @extend .z-depth-1;
     }
+    .content {
+      margin-top: -24px;
+    }
+  }
+  @media #{$small-and-down} {
+    .post-cover {
+      .cover {
+        padding-top: 50%;
+      }
+      .content {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .post-content {
+    font-family: $conts-font-stack;
+    font-weight: normal;
+  }
 }
