@@ -18,9 +18,7 @@ $spacing-unit: 30px !default;
 
 // 2. Vendors
 @import
-  'vendors/normalize',
-  'vendors/syntax-highlighting';
-  // 'vendors/materialize/materialize';
+  'vendors/normalize';
 
 // 3. Base stuff
 @import

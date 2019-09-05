@@ -357,12 +357,7 @@ $conts-font-stack: 'Noto Serif KR', serif !default;
 $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
 
 // Header Styles
-$h1-fontsize: 4.2rem !default;
-$h2-fontsize: 3.56rem !default;
-$h3-fontsize: 2.92rem !default;
-$h4-fontsize: 2.28rem !default;
-$h5-fontsize: 1.64rem !default;
-$h6-fontsize: 1.15rem !default;
+$h-fontsize: (4.2rem, 3.56rem, 2.92rem, 2.28rem, 1.64rem, 1.15rem) !default;
 
 
 // 21. Footer

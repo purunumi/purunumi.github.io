@@ -18,54 +18,54 @@
 </div>
 
 <div id="cookies" style="display:{{site.cookies_banner}}">
-  <p style="text-align:left; padding-left:8px"><a value="hide/show" id="check" class="waves-effect waves-light green lighten-1 btn btn-floating pulse" onclick="Materialize.toast('{{site.cookie_accept_message}}', 2000)" ><i class="material-icons">check</i></a></p>
+  <p style="text-align:left; padding-left:8px"><a value="hide/show" id="check" class="waves-effect waves-light green lighten-1 btn btn-floating pulse" onclick="Materialize.toast('{{site.cookie_accept_message}}', 2000)"><i class="material-icons">check</i></a></p>
   {% include cookies.html %}
 </div>
 
 <div class="container" style="padding:20px;">
   <div id="portfolio" class="section scrollspy">
 
-  <h3 style="text-align:center;">{{site.portfolio_heading}}</h3>
+    <h3 style="text-align:center;">{{site.portfolio_heading}}</h3>
 
-  {% include portfolio_{{site.portfolio_type}}.html %}
+    {% include portfolio_{{site.portfolio_type}}.html %}
 
   </div>
 </div>
 
 <div class="container" style="padding:20px;">
   <div id="skills" class="section scrollspy">
-   <h3 style="text-align:center;">Tools and Experience</h3>
-   {% include skills.html %}
- </div>
+    <h3 style="text-align:center;">Tools and Experience</h3>
+    {% include skills.html %}
+  </div>
 </div>
 
 
 
 
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
+<div class="parallax-container valign-wrapper">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <div class="row center">
 
-        </div>
       </div>
     </div>
-    <div class="parallax"><img src="{{site.parallax_image_two}}" alt="Unsplashed background img 3"></div>
   </div>
+  <div class="parallax"><img src="{{site.parallax_image_two}}" alt="Unsplashed background img 3"></div>
+</div>
 
 
 <div class="container" style="padding:20px;">
   <div id="blog" class="section scrollspy">
-  <h3 style="text-align:center;">Blog</h3>
-  {% include blog-feed.html %}
-</div>
+    <h3 style="text-align:center;">Blog</h3>
+    {% include blog-feed.html %}
+  </div>
 </div>
 
 <div class="container" style="padding:20px;">
   <div id="contact" class="section scrollspy">
-  <h3 style="text-align:center;">Contact</h3>
-  {% include contact.html %}
-</div>
+    <h3 style="text-align:center;">Contact</h3>
+    {% include contact.html %}
+  </div>
 </div>
 
 
