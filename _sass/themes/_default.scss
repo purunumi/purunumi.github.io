@@ -19,7 +19,7 @@ nav {
 }
 #header {
   .nav-wrapper {
-    max-width: 1400px;
+    max-width: $large-screen;
     margin: 0 auto;
   }
 }
@@ -29,22 +29,17 @@ nav {
 
 .container {
   margin: 0 auto;
-  width: 97%;
+  width: 93%;
   max-width: 1280px;
 }
 .row {
   padding: 0 1.5%;
 }
-@media #{$medium-and-up} {
+@media #{$large-and-up} {
   .container {
     width: 93%;
   }
 }
-// @media #{$large-and-up} {
-//     .container {
-//         width: 93%;
-//     }
-// }
 @media #{$small-and-down} {
   .container {
     width: auto;
@@ -79,7 +74,10 @@ nav {
       @extend .z-depth-1;
     }
     .content {
-      margin-top: -3.7em;
+      margin-top: -3.4em;
+      .card-panel{
+        // margin:0 3%;
+      }
       .description{
         font-size:16px;
       }
@@ -102,36 +100,66 @@ nav {
 
 // post
 .page_post-content {
-  .row {padding:0;}
-
   .post-cover {
     width:auto;
+    @media #{$small-and-down} {
+      width:auto;
+      padding: 0;
+    }
+    @media #{$medium-and-down} {
+      max-width:none;
+    }
+    @media #{$large-and-up} {
+      // max-width:89%;
+    }
+    @media #{$extra-large-and-up} {
+      max-width:1280px;
+    }
     .cover {
-      float:right;
-      width: 86%;
-      margin-bottom:-2em;
       padding-top: 42.5%;
       background-repeat: no-repeat;
       background-position: 50%;
       background-size: cover;
       @extend .z-depth-1;
+      @media #{$small-and-down} {
+        padding-top: 50%;
+      }
+      @media #{$large-and-up} {
+        // float:right;
+        // width: 92%;
+        margin-left:8%;
+      }
     }
     .content {
       clear:both;
+      padding:0;
+      @media #{$small-and-down} {
+        margin-top: 0;
+      }
+      @media #{$medium-and-down} {
+        // margin-left:3.5%
+      }
+      @media #{$medium-and-up} {
+        margin-top: -3.4em;
+        margin-left:3.5%;
+      }
+      @media #{$large-and-up} {
+        margin-left:0;
+      }
       .col{
         padding:0;
       }
-    }
-  }
-  @media #{$small-and-down} {
-    .post-cover {
-      width:auto;
-      padding: 0;
-      .cover {
-        padding-top: 50%;
+      .card-panel{
+        margin:0;
+        @media #{$medium-and-up} {
+          margin-left:0;
+        }
+        @media #{$large-and-up} {
+          margin-left:1%;
+        }
       }
-      .content {
-        margin-top: 0;
+      .post-meta{
+        font-size:16px;
       }
     }
   }
@@ -139,5 +167,8 @@ nav {
   .post-content {
     font-family: $conts-font-stack;
     font-weight: normal;
+    @media #{$large-and-up} {
+      padding: 0 24px 0 24%;
+    }
   }
 }

@@ -3,15 +3,15 @@
 <div class="page_home" id="contents">
   <a href="{{site.posts[0].url}}" class="recent-post container">
     <div class="cover" style="background-image:url('{{site.posts[0].image}}');"></div>
-    <div class="row ">
-      <div class="content col s12 m12 l6">
+    <div class="row">
+      <div class="content col s12 m10 l6">
         <div class="card-panel">
           <h1 class="h5">{{site.posts[0].title}}</h1>
           <p class="description">{{site.posts[0].excerpt | strip_html | truncatewords: 45, '...'}}</p>
         </div>
       </div>
-    </a>
-  </div>
+    </div>
+  </a>
 
   <div class="container">
     <div class="section" id="blog">
