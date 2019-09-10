@@ -3,11 +3,11 @@
 
 <head>
   {% if jekyll.environment == "production" %}
-  {% if site.tag_manager_id %}
-  {% include google_tag_manager.html %}
-  {% elsif site.google_analytics_tracking_id %}
-  {% include google_analytics.html %}
-  {% endif %}
+    {% if site.tag_manager_id %}
+      {% include google_tag_manager.html %}
+    {% elsif site.google_analytics_tracking_id %}
+      {% include google_analytics.html %}
+    {% endif %}
   {% endif %}
 
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
@@ -35,10 +35,10 @@
       </a>
       <ul class="right hide-on-med-and-down">
         <li>
-          <a href="sass.html">Sass</a>
+          <a href="#">test menu</a>
         </li>
         <li>
-          <a href="badges.html">Components</a>
+          <a href="#">test menu</a>
         </li>
       </ul>
     </div>

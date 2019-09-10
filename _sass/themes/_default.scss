@@ -7,6 +7,13 @@
 p {
   margin:0;
 }
+ul, ol, li{
+  margin:0;
+}
+ul{
+  padding-left:1em;
+  list-style: disc;
+}
 
 // grid
 body {
@@ -170,5 +177,12 @@ nav {
     @media #{$large-and-up} {
       padding: 0 24px 0 24%;
     }
+
+    h2{@extend .h5;}
+    h3{@extend .h6;}
+    h4{@extend .h6;}
+    h5{@extend .h6;}
+    h6{@extend .h6;}
+    p{font-family: $conts-font-stack;}
   }
 }
