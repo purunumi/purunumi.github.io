@@ -1,0 +1,9 @@
+{
+  "editor.tabSize": 2,
+  "html.format.wrapLineLength": 0,
+  "editor.wordWrap": "on",
+  "editor.formatOnSave": true,
+  "html.autoClosingTags": false,
+  "css.lint.universalSelector": "warning",
+  "scss.lint.universalSelector": "warning"
+}
