@@ -5,5 +5,6 @@
   "editor.formatOnSave": true,
   "html.autoClosingTags": false,
   "css.lint.universalSelector": "warning",
-  "scss.lint.universalSelector": "warning"
+  "scss.lint.universalSelector": "warning",
+  "liquid.format": false
 }
