@@ -1,5 +1,6 @@
 ---
 layout: post
+className: 'page_post-content'
 title: "streams api"
 date: 2019-08-29 21:15:05 +0000
 # image: /assets/images/twoscreen.jpg

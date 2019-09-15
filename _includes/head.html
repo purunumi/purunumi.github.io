@@ -20,26 +20,27 @@
 </head>
 
 <body>
-  {% if site.tag_manager_id and jekyll.environment == "production" %}
+
+{% if site.tag_manager_id and jekyll.environment == "production" %}
   <!-- Google Tag Manager (noscript) -->
   <noscript>
     <iframe height="0" src="https://www.googletagmanager.com/ns.html?id={{site.tag_manager_id}}" style="display:none;visibility:hidden;" width="0" />
   </noscript>
   <!-- End Google Tag Manager (noscript) -->
-  {% endif %}
+{% endif %}
 
-  <nav id="header">
-    <div class="nav-wrapper">
-      <a class="brand-logo" href="/" style="height:100%;">
-        <img src="{{site.baseurl}}/assets/images/logo-purunumi.png" alt="" style="height:100%;" />
-      </a>
-      <ul class="right hide-on-med-and-down">
-        <li>
-          <a href="#">test menu</a>
-        </li>
-        <li>
-          <a href="#">test menu</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+<nav id="header">
+  <div class="nav-wrapper">
+    <a class="brand-logo" href="/" style="height:100%;">
+      <img src="{{site.baseurl}}/assets/images/logo-purunumi.png" alt="" style="height:100%;" />
+    </a>
+    <ul class="right hide-on-med-and-down">
+      <li>
+        <a href="#">test menu</a>
+      </li>
+      <li>
+        <a href="#">test menu</a>
+      </li>
+    </ul>
+  </div>
+</nav>

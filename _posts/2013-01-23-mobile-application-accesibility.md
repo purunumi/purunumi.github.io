@@ -1,5 +1,6 @@
 ---
 layout: post
+className: 'page_post-content'
 title: "모바일 애플리케이션 접근성"
 tag: ["accesibiity", "mobile"]
 date: 2013-01-23 21:15:05 +0000
