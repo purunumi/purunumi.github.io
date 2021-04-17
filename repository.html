@@ -1,0 +1,46 @@
+---
+layout: default
+className: 'page_data-list'
+title: 'repository'
+permalink: /repository
+---
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script>
+  $.ajax({
+    url:'//api.github.com/users/purunumi/repos?Authorization=5751edc41449cccee9ddc09c3576d86f6e511c83',
+    dataType:'json',
+    success:function(data){
+      // console.log(data);
+    }
+  })
+</script>
+<link rel="import" type="application/json" href="//api.github.com/users/purunumi/repos?Authorization=5751edc41449cccee9ddc09c3576d86f6e511c83" />
+
+{{site.github}}
+
+<div id="test"></div>
+
+<div class="row container">
+  {% for data in site.data.repository %}
+    <div class="col s12 m6">
+      <div class="card medium sticky-action">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="{{data.thumb}}">
+        </div>
+        <div class="card-action">
+          <span class="card-title activator grey-text text-darken-4">{{data.title}}<i class="material-icons right">more_vert</i></span>
+          <p><a href="{{data.github}}">github</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+          <p>{{data.description}}</p>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+

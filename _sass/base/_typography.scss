@@ -4,7 +4,7 @@
 
 html,
 body{
-  line-height: 1.5;
+  line-height: 1.6;
 
   @media only screen and (min-width: 0) {
     font-size: 14px;
@@ -39,10 +39,10 @@ a {
   h#{$i}, .h#{$i} {
     margin: 0 0 (nth($h-fontsize, $i) / 2) 0;
     font-size: nth($h-fontsize, $i);
-    line-height: 110%;
+    line-height: 140%;
     font-weight: 700;
     &:nth-child(n+2) {
-      margin-top: nth($h-fontsize, $i) / 1.5;
+      margin-top: nth($h-fontsize, $i) / 1.15;
     }
   }
   h#{$i} a, .h#{$i} a {

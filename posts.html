@@ -1,0 +1,33 @@
+---
+layout: default
+className: 'page_post-list'
+title: 'post list'
+permalink: /posts
+---
+
+
+
+<div class="row container">
+  {% for post in site.posts %}
+
+    <div class="col s12 m6 l4">
+      <div class="card small">
+        <div class="card-image">
+          {% if post.image %}
+            <img src="{{post.image}}">
+          {% else %}
+            <img src="https://placehold.it/640x700">
+          {% endif %}
+          <span class="card-title">{{ post.title | escape }}</span>
+        </div>
+        <div class="card-content">
+          <p>{{post.excerpt | strip_html}}</p>
+        </div>
+        <div class="card-action">
+          <a href="{{post.url}}">This is a link</a>
+        </div>
+      </div>
+    </div>
+
+  {% endfor %}
+</div>
